@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+/* Стили для общего оформления */
+body {
+    font-family: Courier New;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #121214;
+}
+
+h1, h2, h3 {
+    color: #161514;
+    text-align: center;
+}
+.bold-text{
+    font-weight: bold;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для фиксированного меню */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #bd0df3;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+.project {
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+/* Подвал */
+.footer {
+            background-color: #bd0df3;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+</style>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h1>Добро пожаловать в мое портфолио</h1>
+            <p>Это мой личный сайт, где я рассказываю о себе, своих навыках и достижениях.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>О себе</h2>
+            <h3>Биография</h3>
+            <p>Меня зовут Айжан. Я начинающий разработчик сайтов. В разделах ниже вы сможете увидеть несколько моих проектов
+                Разработка сайтов очень увлекательное занятие, с каждым созданным проектом добавляется опыт , что не мало важен при устройстве на хорошую работу
+                Оставайтесь на моем сайте, я буду поплнять портфолио своими новыми проектами</p>
+            <h3>Навыки</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Работа в Adobe Photoshop, Adobe XD</li>
+                <li>Опыт командной работы</li>
+            </ul>
+            <h3>Достижения</h3>
+            <p>Успешно завершила более 3-х проектов.</p>
+        </section>
+        <section id="portfolio" class="section">
+            <h2>Портфолио</h2>
+            <div class="project">
+                <img src="картинка/проект11.jpg" alt="Проект 1" class="project-image">
+                <h3>Проект 1</h3>
+                <p>Описание проекта: Дизайн веб-приложения для управления задачами.</p>
+            </div>
+            <div class="project">
+                <img src="картинка/проект12.jpg" alt="Проект 2" class="project-image">
+                <h3>Проект 2</h3>
+                <p>Описание проекта: Разработка интернет-магазина с уникальными функциями.</p>
+            </div>
+            <div class="project">
+                <img src="картинка/проект13.jpg" alt="Проект 3" class="project-image">
+                <h3>Проект 3</h3>
+                <p>Описание проекта: Создание лендинга для запуска нового продукта.</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Портфолио</h2>
+            <div class="project">
+                <h3>Проект 1</h3>
+                <p>Описание проекта: Проект нацелен на создание веб-приложения, которое позволит пользователям эффективно управлять своими задачами и временем. В современном мире, где объем информации и задач постоянно растет, организация рабочего процесса становится критически важной. Веб-приложение будет включать такие функции, как создание задач, установка сроков выполнения, приоритезация задач, установка напоминаний и интеграция с календарями. В дополнение к этому пользователи смогут делиться задачами с коллегами и отслеживать совместный прогресс. Интерфейс будет интуитивно понятным, что делает его доступным для широкой аудитории.</p>
+            </div>
+            <div class="project">
+                <h3>Проект 2</h3>
+                <p>Описание проекта: Интернет-магазин – это современный инструмент торговли, позволяющий производить реализацию товаров и услуг посредством сети интернет.
+
+                    Разработка интернет-магазина представляет собой процесс написания нового или адаптации готового программного кода («движка»), проработку удобства его использования, создание дизайна и последующего наполнения нового ресурса информацией о реализуемых товарах и услугах. Разработка интернет-магазина позволит существенно повысить уровень сбыта, привлечь новых клиентов, сократить издержки.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Контакты</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; Батырбекова Айжан. 2024г. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
